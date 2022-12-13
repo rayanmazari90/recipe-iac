@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "appServiceAppName": {
-            "value": "bmazari-assignment-app-dev-bicep"
+            "value": "bmazari-assignment-app-dev-BE-bicep"
         },
         "appServicePlanName": {
-            "value": "bmazari-assignment-ASP-dev-bicep"
+            "value": "bmazari-assignment-ASP-dev-FE-bicep"
         },
         "storageAccountName": {
             "value": "jseijasdevstorage"
