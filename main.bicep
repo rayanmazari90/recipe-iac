@@ -1,7 +1,11 @@
-@sys.description('The Web App name.')
+@sys.description('The Web App Backend name .')
 @minLength(3)
 @maxLength(40)
-param appServiceAppName string = 'bmazari-assignment-app-bicep'
+param appServiceAppNameBE string = 'bmazari-assignment-app-be-bicep'
+@sys.description('The Web App FrontEnd name .')
+@minLength(3)
+@maxLength(40)
+param appServiceAppNameFE string = 'bmazari-assignment-app-fe-bicep'
 @sys.description('The App Service Plan name.')
 @minLength(3)
 @maxLength(40)
@@ -31,14 +35,29 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   }
 }
 
-module appService 'module/appStuff.bicep' = {
-  name: 'appService'
+module appServiceBE 'module/appStuff.bicep' = {
+  name: 'appServiceBE'
   params: {
     location: location
-    appServiceAppName: appServiceAppName
+    appServiceAppName: appServiceAppNameBE
     appServicePlanName: appServicePlanName
     environmentType: environmentType
   }
 }
 
-output appServiceAppHostName string = appService.outputs.appServiceAppHostName
+
+module appServiceFE 'module/appStuff.bicep' = {
+  name: 'appServiceFE'
+  params: {
+    location: location
+    appServiceAppName: appServiceAppNameFE
+    appServicePlanName: appServicePlanName
+    environmentType: environmentType
+  }
+}
+
+
+
+
+output appServiceAppHostNameBE string = appServiceBE.outputs.appServiceAppHostName
+output appServiceAppHostNameFE string = appServiceFE.outputs.appServiceAppHostName

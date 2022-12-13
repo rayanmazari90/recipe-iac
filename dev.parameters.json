@@ -2,11 +2,14 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "appServiceAppName": {
-            "value": "bmazari-assignment-app-dev-BE-bicep"
+        "appServiceAppNameBE_dev": {
+            "value": "bmazari-assignment-app-BE-dev-bicep"
+        },
+        "appServiceAppNameFE_dev": {
+            "value": "bmazari-assignment-app-BE-prod-bicep"
         },
         "appServicePlanName": {
-            "value": "bmazari-assignment-ASP-dev-FE-bicep"
+            "value": "bmazari-assignment-ASP-dev-bicep"
         },
         "storageAccountName": {
             "value": "jseijasdevstorage"
