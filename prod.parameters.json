@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "appServiceAppName": {
-            "value": "bmazari-assignment-app-prod-BE-bicep"
+            "value": "bmazari-assignment-app-BE-prod-bicep"
         },
         "appServicePlanName": {
             "value": "bmazari-assignment-ASP-prod-FE-bicep"
