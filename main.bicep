@@ -61,3 +61,16 @@ module appServiceFE 'module/appStuff.bicep' = {
 
 output appServiceAppHostNameBE string = appServiceBE.outputs.appServiceAppHostName
 output appServiceAppHostNameFE string = appServiceFE.outputs.appServiceAppHostName
+
+
+
+
+
+
+
+
+
+
+
+
+
