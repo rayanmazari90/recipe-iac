@@ -6,7 +6,7 @@
             "value": "bmazari-assignment-app-BE-dev-bicep"
         },
         "appServiceAppNameFE": {
-            "value": "bmazari-assignment-app-BE-prod-bicep"
+            "value": "bmazari-assignment-app-FE-dev-bicep"
         },
         "appServicePlanName": {
             "value": "bmazari-assignment-ASP-dev-bicep"
